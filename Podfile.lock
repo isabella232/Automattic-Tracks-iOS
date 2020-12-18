@@ -32,7 +32,7 @@ DEPENDENCIES:
   - OHHTTPStubs/Swift
   - Reachability (~> 3)
   - Sentry (~> 6.0.12)
-  - Sodium (~> 0.9)
+  - Sodium (from `https://github.com/jedisct1/swift-sodium.git`, branch `master`)
   - UIDeviceIdentifier (~> 1)
 
 SPEC REPOS:
@@ -42,8 +42,17 @@ SPEC REPOS:
     - OHHTTPStubs
     - Reachability
     - Sentry
-    - Sodium
     - UIDeviceIdentifier
+
+EXTERNAL SOURCES:
+  Sodium:
+    :branch: master
+    :git: https://github.com/jedisct1/swift-sodium.git
+
+CHECKOUT OPTIONS:
+  Sodium:
+    :commit: e46bba375615835c3074f43da24f0024943f3a66
+    :git: https://github.com/jedisct1/swift-sodium.git
 
 SPEC CHECKSUMS:
   CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
@@ -54,6 +63,6 @@ SPEC CHECKSUMS:
   Sodium: 23d11554ecd556196d313cf6130d406dfe7ac6da
   UIDeviceIdentifier: f4bf3b343581a1beacdbf5fb1a8825bd5f05a4a4
 
-PODFILE CHECKSUM: b660e2a496ebf680ad5af31a4511198327e882ab
+PODFILE CHECKSUM: 2cd9233666370ff9897fae62eac13d9e9f907c3c
 
 COCOAPODS: 1.10.0

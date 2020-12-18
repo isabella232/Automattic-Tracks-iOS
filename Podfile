@@ -8,7 +8,7 @@ def shared
   pod 'CocoaLumberjack', '~> 3'
   pod 'Reachability', '~> 3'
   pod 'Sentry', '~> 6.0.12'
-  pod 'Sodium', '~> 0.9'
+  pod 'Sodium', :git => 'https://github.com/jedisct1/swift-sodium.git', :branch => 'master'
 end
 
 target 'Automattic-Tracks-iOS' do
